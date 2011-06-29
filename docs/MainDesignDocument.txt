@@ -5,18 +5,60 @@ Four-X, as it's name suggests, will be a 4X game, modelled after Master of Orion
 Point-form design specifications:
 	General game:
 		- Turn-based
-	Colony/Base/City screen:
-		- made up of isometric grid, potentially rotatable
+	Base screen:
+		- Shows graphic representing the base with all it's buildings
+		- has links to World or Fleet screen, Base Construction screen
+		- Displays information about the base
+		- Allows commands to be given to the base
+		- Shows summaries of Industry, Military, Agriculture, and Research
+		- Shows population and job information
+		- Clicking on a summary will open it's settings dialog
+		- Allows renaming of the base
+		- Clicking on a building will open it's Building Settings
+	World screen
+		- Shows globe of planet/moon/asteroid, rotating, with Bases/Cities showing up
+		- Allows renaming of the world
+		- Clicking on a base will take you to that base's Base screen
+		- shows information about that world
+		- allows world commands
+		- has links to planetary Construction
+		- Shows Planetary assets
+	Fleet Screen
+		- similar to world screen, except it's for a fleet
+		- Allows fleet mamnagement
+	Construction
+		- Things are build from Industry points
+		- 2 types: Base construction, and Planetary Construction
+		- base construction is mostly buildings
+		- planetary construction is things that affect the whole planet (ships, stations, etc)
+		- Only Bases generate Industry (at first)
+		- Planetary Construction is done with excess base Industry
+		- Bases may be set to contribute a % or value of their Industry to Planetary Construction
+	Agriculture
+	Research
+	Economy
+	Base Construction Screen
+		- Shows list of built buildings
+		- Shows list of Buildable buildings
+		- building Queue
+	Planetary Construction Screen
+	Building Dialog
+	Industry Dialog
+	Military Dialog
+	Agriculture Dialog
+	Game Entities
+		
 	Colony/Base/City Buildiing ideas
 
 Cool Ideas:
 	- Build bases on planets, asteroids, or potentially mobile space barges/stations.
-	- Control building placement and base structure manually or automatically
 	- Multiple start conditions (Pirate Lord, Planetary Magistrate, Colonist Commander)
 	- Multiple Victory Conditions
 	- Optional tactical ship combat
 	- Extensive tech tree 
 	- Manually or automatically design ships
 	- Real-time or turn-based ship combat
-	- Tactical planetary combat
+	- Tactical planetary combat;
 	- Tactical Boarding Actions
+	- unused land in bases is automatically used by civilians
+	- morale represents a function of health, happiness, and access to services
