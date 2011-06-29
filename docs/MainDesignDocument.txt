@@ -1,0 +1,22 @@
+Four-X Design Document
+
+Four-X, as it's name suggests, will be a 4X game, modelled after Master of Orion 2, with some influences from Tropico 2: pirates Cove and Sid Mier's Civilization.
+
+Point-form design specifications:
+	General game:
+		- Turn-based
+	Colony/Base/City screen:
+		- made up of isometric grid, potentially rotatable
+	Colony/Base/City Buildiing ideas
+
+Cool Ideas:
+	- Build bases on planets, asteroids, or potentially mobile space barges/stations.
+	- Control building placement and base structure manually or automatically
+	- Multiple start conditions (Pirate Lord, Planetary Magistrate, Colonist Commander)
+	- Multiple Victory Conditions
+	- Optional tactical ship combat
+	- Extensive tech tree 
+	- Manually or automatically design ships
+	- Real-time or turn-based ship combat
+	- Tactical planetary combat
+	- Tactical Boarding Actions
