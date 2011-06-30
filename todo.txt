@@ -1,4 +1,4 @@
 Four-X Todo list
 
 - write down some concrete ideas
-- 
+- set up general state machine

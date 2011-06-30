@@ -2,9 +2,36 @@ Four-X Design Document
 
 Four-X, as it's name suggests, will be a 4X game, modelled after Master of Orion 2, with some influences from Tropico 2: pirates Cove and Sid Mier's Civilization.
 
-Point-form design specifications:
-	General game:
-		- Turn-based
+states:
+	Main menu Screen:
+		- Shows aplash screen and title, has menu buttons
+		- Continue game: Load last saved game; Go to Empire Screen
+		- New game: Go to Game Setup Screen
+		- Load game: get game from Load Game Dialog; Load it; Go to Empire Screen
+		- Options: open Options Dialog
+		- Quit: Exit
+	Game Setup Screen:
+		- Shows game setup settings and options.
+		- Game Settings: Open Game Setting Dialog
+		- Galaxy Settings: Open Galaxy Settings Dialog
+		- AI Settings: Open AI Settings Dialog
+		- Scenarios: Go to Scenarios Screen
+		- Back: Go to Main menu Screen
+		- Start Game: Go to Choose Race Screen
+	Game Settings Dialog:
+		- Shows game settings and allows them to be altered.
+		- Ok: Save Game Settings; Go to Game Setup Screen
+	Galaxy Settings Dialog:
+		- Shows Galaxy settings and allows them to be altered.
+		- Ok: Save Galaxy settings; Go to Game Setup Screen
+	AI Settings Dialog:
+		- Shows AI settings and lists AIs in the game. Allows the AIs to be set up.
+		- Ok: Save AI settings; Go to Game Setup Screen
+	Scenarios Screen:
+	Choose Race Screen:
+	Load Game Dialog:
+	Options Dialog
+	Empire Screen:
 	Base screen:
 		- Shows graphic representing the base with all it's buildings
 		- has links to World or Flotilla screen, Base Construction screen
@@ -26,6 +53,14 @@ Point-form design specifications:
 	Flotilla Screen
 		- similar to world screen, except it's for a flotilla
 		- Allows flotilla mamnagement
+	Base Construction Screen
+		- Shows list of built buildings
+		- Shows list of Buildable buildings
+		- building Queue
+		
+Point-form design specifications:
+	General game:
+		- Turn-based
 	Construction
 		- Things are build from Industry points
 		- 2 types: Base construction, and Planetary Construction
@@ -79,22 +114,9 @@ Point-form design specifications:
 		- Each turn, and empire's GDP is calculated based on it's total industry and agriculture produced that turn, and is used to describe the general state of an empire's economy.
 		- if an empire's deficit exceeds it's GDP, morale will be -100%, and rebellions become very likely
 		- trade treaties and taxes may be set for other empires, and trade is calculated based on the GDPs of both empires. It is assumed trade is carried out by corporations. If is possible for an empire to lose wealth from trading if their partner's economy is weak enough.
-	Base Construction Screen
-		- Shows list of built buildings
-		- Shows list of Buildable buildings
-		- building Queue
-	Planetary Construction Screen
-	Building Dialog
-	Industry Dialog
-	Military Dialog
-	Agriculture Dialog
-	Game Entities
 	Planets
 		- a lot of planets can support life, but very few are useful without some terraforming.
 		- it should be reasonable cost-wise to build space barges as opposed to colonize planets
-	Spying
-	Laws
-	Diplomacy
 	Military
 		- Military is dealt with on a planetary scale
 		- Population units allocated to the Military job each have a "force capacity", a total "value" of military forces they may support. This includes ship crews, ground forces, and spies.
@@ -143,15 +165,27 @@ Point-form design specifications:
 			- The ship must move adjecent to the target ship
 			- the ship counts as immobile for a turn
 			- Boarding actions resolve automatically. If some boarders survive the action, they may retreat or stay.
-	Ground combat
-	Barges
 	Heroes
 		- A unit uses it's heros stats when they are better that the unit.
 		- For retreat actions, a heros initiative may be used instead of the worst.
 		- may add Action points to their ship/unit
-	Ship Design
 		
-	Colony/Base/City Buildiing ideas
+To design:
+	Planetary Construction Screen
+	Building Dialog
+	Industry Dialog
+	Military Dialog
+	Agriculture Dialog
+	Game Entities
+	Spying
+	Laws
+	Diplomacy
+	Ground combat
+	Barges
+	Ship Design
+	Game Settings
+	Galaxy Settings
+	AI Settings
 
 Cool Ideas:
 	- Build bases on planets, asteroids, or potentially mobile space barges/stations.
@@ -165,3 +199,4 @@ Cool Ideas:
 	- Tactical Boarding Actions
 	- unused land in bases is automatically used by civilians
 	- morale represents a function of health, happiness, and access to services
+	- Scripted scenarios
