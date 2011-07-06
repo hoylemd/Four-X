@@ -20,18 +20,41 @@ states:
 		- Start Game: Go to Choose Race Screen
 	Game Settings Dialog:
 		- Shows game settings and allows them to be altered.
-		- Ok: Save Game Settings; Go to Game Setup Screen
+		- Ok: Save Game Settings; Close Dialog
 	Galaxy Settings Dialog:
 		- Shows Galaxy settings and allows them to be altered.
-		- Ok: Save Galaxy settings; Go to Game Setup Screen
+		- Ok: Save Galaxy settings; Close Dialog
 	AI Settings Dialog:
 		- Shows AI settings and lists AIs in the game. Allows the AIs to be set up.
 		- Ok: Save AI settings; Go to Game Setup Screen
 	Scenarios Screen:
+		- Lists available scenarios, show description of selected scenario
+		- Start Game: Load Scenario settings; Go to Empire Screen
+		- Back: Go to Game Setup Screen
 	Choose Race Screen:
+		- List races and display descriptions of selected race
+		- New Race: Go to Create Race Screen
+		- Start Game: Load game settings, go to Empire Screen
+		- Back: Go to Game Setup Screen
 	Load Game Dialog:
-	Options Dialog
+		- List Saved games, displays summary of selected game
+		- Load: return chosen game, Close Dialog
+		- Cancel: Close Dialog
+	Options Dialog:
+		- List options and allows them to be altered
+		- OK: Save Options, Close Dialog
+	Create Race Screen:
+		- List available Racial Attributes and allows them to be chosen or disarded
+		- Load Race: get race from Choose Race Dialog, apply chosen races attributes
+		- Save race: create new race with selected attributes
+		- Back: Go to Choose Race Screen
+	Choose Race Dialog:
+		- List available races, and sisplay descriptions of selected race
+		- OK: return selected race, close dialog
+		- Cancel: close Dialog
 	Empire Screen:
+		- Displays the galaxy, highlighting systems owned by different empires.  Shows Ships & fleets as well. Displays summarized information about the empire.
+		- 
 	Base screen:
 		- Shows graphic representing the base with all it's buildings
 		- has links to World or Flotilla screen, Base Construction screen
@@ -186,6 +209,7 @@ To design:
 	Game Settings
 	Galaxy Settings
 	AI Settings
+	Race creation
 
 Cool Ideas:
 	- Build bases on planets, asteroids, or potentially mobile space barges/stations.
